@@ -1,16 +1,7 @@
-# flutter_script
+### Quest 26 - Flutter App
 
-A new Flutter project.
+<img align="center" src="./quest26.png" width="300px" />
 
-## Getting Started
+Click `Click` btn, then it'll laugh `HAHAHAHAHAHAHAHAHAHAHAH`.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img align="center" src="./quest26_print.png" width="300px" />
