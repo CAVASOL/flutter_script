@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -8,7 +10,7 @@ class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   onChanged() {
-    print('HAHAHAHAHAHAHAHAH');
+    print('HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAH');
   }
 
   @override
