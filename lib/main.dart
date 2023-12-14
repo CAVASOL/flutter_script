@@ -36,13 +36,17 @@ class MyApp extends StatelessWidget {
           ),
           child: Center(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.black,
+                  ),
                   onPressed: onChanged,
                   child: const Text(
                     'Text',
                     style: TextStyle(
-                      fontSize: 24,
+                      fontSize: 20,
                     ),
                   ),
                 ),
@@ -52,39 +56,29 @@ class MyApp extends StatelessWidget {
                 Stack(
                   children: [
                     Container(
-                      width: 350,
-                      height: 350,
+                      width: 300,
+                      height: 300,
                       color: Colors.deepPurple,
                     ),
                     Container(
-                      width: 300,
-                      height: 300,
+                      width: 240,
+                      height: 240,
                       color: Colors.blueGrey,
                     ),
                     Container(
-                      width: 250,
-                      height: 250,
+                      width: 180,
+                      height: 180,
                       color: Colors.lightGreen,
                     ),
                     Container(
-                      width: 200,
-                      height: 200,
+                      width: 120,
+                      height: 120,
                       color: Colors.amber,
                     ),
                     Container(
-                      width: 150,
-                      height: 150,
-                      color: Colors.orange,
-                    ),
-                    Container(
-                      width: 100,
-                      height: 100,
-                      color: Colors.deepOrange,
-                    ),
-                    Container(
-                      width: 50,
-                      height: 50,
-                      color: Colors.pink,
+                      width: 60,
+                      height: 60,
+                      color: Colors.pinkAccent,
                     ),
                   ],
                 )
