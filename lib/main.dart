@@ -1,51 +1,14 @@
-// 329p
-
-// ignore_for_file: library_private_types_in_public_api
-
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatefulWidget {
+class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  @override
-  _MyAppState createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  int _selectedIndex = 0; // 변경: _selectedIndex를 상태로 관리
-
-  final List<Widget> _widgetOptions = <Widget>[
-    const Text(
-      'First Screen',
-      style: TextStyle(
-        fontSize: 24,
-        fontWeight: FontWeight.bold,
-      ),
-    ),
-    const Text(
-      'Second Screen',
-      style: TextStyle(
-        fontSize: 24,
-        fontWeight: FontWeight.bold,
-      ),
-    ),
-    const Text(
-      'Third Screen',
-      style: TextStyle(
-        fontSize: 24,
-        fontWeight: FontWeight.bold,
-      ),
-    )
-  ];
-
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
+  onChanged() {
+    print('HAHAHAHAHAHAHAHAH');
   }
 
   @override
@@ -54,128 +17,65 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          bottom: PreferredSize(
-            preferredSize: const Size.fromHeight(
-              120,
-            ),
-            child: Theme(
-              data: Theme.of(context).copyWith(
-                colorScheme: ColorScheme.fromSwatch().copyWith(
-                  secondary: Colors.white,
-                ),
-              ),
-              child: Container(
-                height: 48,
-                alignment: Alignment.center,
-                child: const Text(
-                  'Appbar Bottom Text',
-                ),
-              ),
-            ),
-          ),
-          flexibleSpace: Container(
-            decoration: const BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage(
-                  'images/darth.png',
-                ),
-                fit: BoxFit.fill,
-              ),
-            ),
+          leading: const Icon(
+            Icons.favorite,
           ),
           title: const Text(
-            'Appbar Title',
+            'Flutter App',
+            style: TextStyle(
+              color: Colors.white,
+            ),
           ),
-          actions: [
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.chat_bubble_outline,
-              ),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.phone,
-              ),
-            ),
-          ],
+          backgroundColor: Colors.black,
         ),
-        body: Center(
-          child: _widgetOptions.elementAt(
-            _selectedIndex,
+        body: Container(
+          margin: const EdgeInsets.all(
+            20,
           ),
-        ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          child: const Icon(
-            Icons.add,
-          ),
-        ),
-        bottomNavigationBar: BottomNavigationBar(
-          type: BottomNavigationBarType.shifting,
-          items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.home,
-              ),
-              label: 'Home',
-              backgroundColor: Colors.black,
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.search,
-              ),
-              label: 'Search',
-              backgroundColor: Colors.black,
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.favorite,
-              ),
-              label: 'Wishlist',
-              backgroundColor: Colors.black,
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.person_2_rounded,
-              ),
-              label: 'Profile',
-              backgroundColor: Colors.black,
-            ),
-          ],
-          currentIndex: _selectedIndex,
-          selectedItemColor: Colors.amber,
-          onTap: _onItemTapped,
-        ),
-        drawer: Drawer(
-          child: ListView(
-            padding: EdgeInsets.zero,
-            children: [
-              const DrawerHeader(
-                decoration: BoxDecoration(
-                  color: Colors.black,
-                ),
-                child: Text(
-                  'Hi',
-                  style: TextStyle(
-                    color: Colors.white,
+          child: Center(
+            child: Column(
+              children: [
+                ElevatedButton(
+                  onPressed: onChanged,
+                  child: const Text(
+                    'Text',
+                    style: TextStyle(
+                      fontSize: 24,
+                    ),
                   ),
                 ),
-              ),
-              ListTile(
-                title: const Text(
-                  'About',
+                const SizedBox(
+                  height: 20,
                 ),
-                onTap: () {},
-              ),
-              ListTile(
-                title: const Text(
-                  'Contact',
-                ),
-                onTap: () {},
-              ),
-            ],
+                Stack(
+                  children: [
+                    Container(
+                      color: Colors.deepPurple,
+                    ),
+                    Container(
+                      width: 400,
+                      height: 400,
+                      color: Colors.blueGrey,
+                    ),
+                    Container(
+                      width: 300,
+                      height: 300,
+                      color: Colors.lightGreen,
+                    ),
+                    Container(
+                      width: 200,
+                      height: 200,
+                      color: Colors.amber,
+                    ),
+                    Container(
+                      width: 100,
+                      height: 100,
+                      color: Colors.orange,
+                    ),
+                  ],
+                )
+              ],
+            ),
           ),
         ),
       ),
