@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_script/currency_card.dart';
-import './button.dart';
+import 'package:flutter_script/landing/currency_card.dart';
+import 'button.dart';
 
 class Landing extends StatelessWidget {
   const Landing({super.key});
