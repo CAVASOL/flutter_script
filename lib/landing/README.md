@@ -1,3 +1,3 @@
 ## Landing Page
 
-<img align="center" src="./landing.png" width="500px" />
+<img align="center" src="./landing.png" width="300px" />
