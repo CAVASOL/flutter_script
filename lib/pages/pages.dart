@@ -78,7 +78,7 @@ class FirstScreen extends StatelessWidget {
 class SecondScreen extends StatelessWidget {
   SecondScreen({Key? key}) : super(key: key);
 
-  bool is_cat = false; // Changed the state to false for demonstration
+  bool is_cat = false;
 
   void onChanged() {
     if (!is_cat) {
