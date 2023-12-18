@@ -29,6 +29,10 @@ Vanilla architecture and components of the `Flutter` framework.
     ├── ch13_2_cupertinoapp
     ├── ch13_3_safearea
     ├── ch13_4_scaffold
+    ├── ch13_5_sliverappbar
+    ├── ch14_1_navigation
+    ├── ch14_2_1_navigator
+    ├── ch14_2_2_delegate
     ├── counter
     ├── create_app
     ├── landing
