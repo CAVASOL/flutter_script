@@ -38,6 +38,7 @@ Vanilla architecture and components of the `Flutter` framework.
     ├── create_app
     ├── landing
     ├── large_title
+    ├── pages
     ├── pomodoro
     ...
 ```
