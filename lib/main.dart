@@ -7,7 +7,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,12 +23,13 @@ class MyApp extends StatelessWidget {
 }
 
 class FirstScreen extends StatelessWidget {
-  FirstScreen({Key? key}) : super(key: key);
+  FirstScreen({super.key});
 
   bool is_cat = true;
 
   void onChanged() {
     if (is_cat) {
+      // ignore: avoid_print
       print("Cat's state: $is_cat");
     } else {
       return;
@@ -76,11 +77,13 @@ class FirstScreen extends StatelessWidget {
 }
 
 class SecondScreen extends StatelessWidget {
-  SecondScreen({Key? key}) : super(key: key);
+  SecondScreen({super.key});
 
   bool is_cat = false;
+
   void onChanged() {
     if (!is_cat) {
+      // ignore: avoid_print
       print("Cat's state: $is_cat");
     } else {
       return;
