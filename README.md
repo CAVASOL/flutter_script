@@ -34,6 +34,9 @@ Vanilla architecture and components of the `Flutter` framework.
     ├── ch14_2_1_navigator
     ├── ch14_2_2_delegate
     ├── ch15_1_1_json
+    ├── ch15_1_2_serializable
+    ├── ch15_2_http
+    ├── ch15_3_dio
     ├── counter
     ├── create_app
     ├── landing
