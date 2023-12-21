@@ -4,6 +4,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
+// ignore: non_constant_identifier_names
 void Jelly() {
   runApp(const MyApp());
 }
