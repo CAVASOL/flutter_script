@@ -4,7 +4,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-void jelly() {
+void Jelly() {
   runApp(const MyApp());
 }
 
@@ -33,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<void> fetchData(int queryType) async {
     try {
-      const enteredUrl = 'https://9e16-34-83-37-72.ngrok-free.app/';
+      const enteredUrl = 'https://5647-34-83-37-72.ngrok-free.app/';
       final response = await http.get(
         Uri.parse("${enteredUrl}sample1"),
         headers: {
@@ -45,9 +45,9 @@ class _MyHomePageState extends State<MyHomePage> {
         final data = jsonDecode(response.body);
         setState(() {
           if (queryType == 1) {
-            result = "예측 라벨: ${data['predicted_label']}";
-          } else {
-            result = "예측 확률: ${data['prediction_score']}";
+            result = "Predicted label: ${data['predicted_label']}";
+          } else if (queryType == 2) {
+            result = "Predicted score: ${data['prediction_score']}";
           }
         });
       } else {
