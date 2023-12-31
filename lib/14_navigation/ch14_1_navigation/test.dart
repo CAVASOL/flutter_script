@@ -2,10 +2,10 @@
 // 357p
 
 import 'package:flutter/material.dart';
-import 'package:flutter_script/ch14_1_navigation/first_screen.dart';
-import 'package:flutter_script/ch14_1_navigation/fourth_screen.dart';
-import 'package:flutter_script/ch14_1_navigation/second_screen.dart';
-import 'package:flutter_script/ch14_1_navigation/third_screen.dart';
+import 'package:flutter_script/14_navigation/ch14_1_navigation/first_screen.dart';
+import 'package:flutter_script/14_navigation/ch14_1_navigation/fourth_screen.dart';
+import 'package:flutter_script/14_navigation/ch14_1_navigation/second_screen.dart';
+import 'package:flutter_script/14_navigation/ch14_1_navigation/third_screen.dart';
 
 void test() {
   runApp(const MyApp());

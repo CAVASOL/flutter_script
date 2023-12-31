@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_script/landing/currency_card.dart';
+import 'package:flutter_script/mini_projects/landing/currency_card.dart';
 import 'button.dart';
 
 class Landing extends StatelessWidget {

@@ -2,7 +2,7 @@
 // 356p
 
 import 'package:flutter/material.dart';
-import 'package:flutter_script/ch14_1_navigation/user.dart';
+import 'package:flutter_script/14_navigation/ch14_1_navigation/user.dart';
 
 class FirstScreen extends StatelessWidget {
   const FirstScreen({super.key});
