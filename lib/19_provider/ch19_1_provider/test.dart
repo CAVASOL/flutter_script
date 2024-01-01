@@ -1,7 +1,6 @@
 // 489p
 
 import 'package:flutter/material.dart';
-import 'package:flutter_script/mini_projects/large_title/large_title.dart';
 import 'package:provider/provider.dart';
 
 void test() {
@@ -51,7 +50,7 @@ class SubWidget extends StatelessWidget {
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
-              color: Colors.white,
+              color: Colors.pink,
             ),
           ),
           Text(
@@ -59,7 +58,7 @@ class SubWidget extends StatelessWidget {
             style: const TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
-              color: Colors.white,
+              color: Colors.pink,
             ),
           )
         ],

@@ -74,7 +74,13 @@ Vanilla architecture and components of the `Flutter` framework.
     │     ├── ch19_2_3_proxy
     │     ├── ch19_2_4_future_stream
     │     ├── ch19_3_1_consumer
-    │     └── ch19_3_2_selector
+    │     └── ch19_3_2_selecto
+    │
+    ├── 20. Managing state with bloc
+    │     ├── ch20_2_bloc
+    │     ├── ch20_3_1_provider_builder
+    │     ├── ch20_3_2_cunsumer_repository
+    │     └── ch20_4_cubit
     │ 
     └── Mini Projects
           ├── counter

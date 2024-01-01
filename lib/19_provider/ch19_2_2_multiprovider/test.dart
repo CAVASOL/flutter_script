@@ -24,9 +24,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.black,
         appBar: AppBar(
           title: const Text(
-            'Multi-provider',
+            'Multi Provider',
           ),
         ),
         body: MultiProvider(
@@ -62,12 +63,15 @@ class SubWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Text(
-            'Provider:',
+            '[Providers]',
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
               color: Colors.white,
             ),
+          ),
+          const SizedBox(
+            height: 12,
           ),
           Text(
             'int data: $intData',

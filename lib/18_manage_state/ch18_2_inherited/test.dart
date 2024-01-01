@@ -1,5 +1,7 @@
 // 482p
 
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 void test() {
@@ -52,7 +54,7 @@ class TestSubWidget extends StatelessWidget {
     return Container(
       width: 200,
       height: 200,
-      color: Colors.yellow,
+      color: Colors.green,
       child: Center(
         child: Text(
           'Sub-widget: $count',
@@ -111,7 +113,7 @@ class TestWidget extends StatelessWidget {
                     'count++',
                   ),
                 ),
-                const TestSubWidget()
+                TestSubWidget()
               ],
             ),
           ),

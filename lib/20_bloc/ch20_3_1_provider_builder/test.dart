@@ -70,7 +70,7 @@ class MyBlocObserver extends BlocObserver {
   }
 }
 
-void main() {
+void test() {
   BlocOverrides.runZoned(() {
     runApp(const MyApp());
   }, blocObserver: MyBlocObserver());

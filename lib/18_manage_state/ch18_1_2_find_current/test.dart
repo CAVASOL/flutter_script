@@ -54,8 +54,13 @@ class _ParentWidgetState extends State<ParentWidget> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
-                  'Parent, child: $childCount',
+                Container(
+                  child: Text(
+                    'Parent, child: $childCount',
+                  ),
+                ),
+                const SizedBox(
+                  width: 12,
                 ),
                 ElevatedButton(
                   onPressed: getChildData,
@@ -63,11 +68,13 @@ class _ParentWidgetState extends State<ParentWidget> {
                     'Get child-data',
                   ),
                 ),
-                ChildWidget(key: childKey),
-                const IconWidget(),
-                const ContentWidget(),
               ],
-            )
+            ),
+            ChildWidget(key: childKey),
+            // ignore: prefer_const_constructors
+            IconWidget(),
+            // ignore: prefer_const_constructors
+            ContentWidget(),
           ],
         ),
       ),
@@ -92,8 +99,13 @@ class ChildWidgetState extends State<ChildWidget> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text(
-          'Child, $childCount',
+        Container(
+          child: Text(
+            'Child, $childCount',
+          ),
+        ),
+        const SizedBox(
+          width: 12,
         ),
         ElevatedButton(
           child: const Text(
